@@ -15,6 +15,13 @@ def draw(canvas):
     pygame.draw.circle(canvas, (255,0,0), (200,200), 30)
 
 
+    pygame.draw.line(canvas, (255,255,0), (50,50), (500,400), 10)
+
+    pygame.draw.polygon(canvas, (0,255,255), [(400, 50), (400,200),(600,125)])
+
+
+
+
 
 # don't touch the below code!
 ################################
