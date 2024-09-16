@@ -28,6 +28,8 @@ window = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Graphics Starter')
 pygame.font.init()
 my_font = pygame.font.SysFont('Comic Sans MS', 30)
+clock = pygame.time.Clock()
+
 while True:
     move()
     draw(window)
@@ -36,7 +38,7 @@ while True:
             pygame.quit()
             sys.exit()
     pygame.display.update()
-
+    clock.tick(30)
 
 
 
