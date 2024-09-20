@@ -13,6 +13,7 @@ ball1speedy = 9
 ball1rad = 20
 
 def move():
+    # any variables that change within this def need to be labeled global
     global ball1x, ball1speedx, ball1speedy, ball1y
 
     # move the ball in x and y directions
