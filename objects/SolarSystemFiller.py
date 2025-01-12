@@ -1,4 +1,5 @@
-# bouncing ball example
+# filler code for a solar system simulation
+
 import math
 from os import times
 
