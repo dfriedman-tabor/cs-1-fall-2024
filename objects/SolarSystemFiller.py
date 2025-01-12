@@ -1,8 +1,6 @@
 # filler code for a solar system simulation
 
 import math
-from os import times
-
 
 width = 770
 height = 770
