@@ -30,7 +30,6 @@ def draw(canvas):
 # handles what should happen when a key is pressed
 def keyPressed(event):
     # an example of how to check if a certain key is pressed
-    global thrown, ballx, bally, ballSpeedx, ballSpeedy
     if event.key == pygame.K_SPACE:
         print("space was pressed")
 
