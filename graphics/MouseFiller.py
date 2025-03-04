@@ -5,10 +5,17 @@ from random import randint
 width = 400
 height = 400
 
+ballwidth = 40
+ballheight = 60
+ballx = 100
+bally = 200
 
 def draw(canvas):
 
     canvas.fill((255,255,255))
+
+    # draw your image at a given location
+    canvas.blit(ballImage, (ballx, bally))
 
 
 def mousePressed(mouseX, mouseY):
@@ -17,7 +24,10 @@ def mousePressed(mouseX, mouseY):
 def keyPressed(key):
     pass
 
-
+def setup():
+    # load your image and scale it to a given size
+    global ballImage
+    ballImage = pygame.transform.scale(pygame.image.load("football.png"), (ballwidth, ballheight))
 
 # don't touch the below code!
 ################################
@@ -32,6 +42,9 @@ window = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Graphics Starter')
 pygame.font.init()
 my_font = pygame.font.SysFont('Comic Sans MS', 30)
+
+setup()
+
 while True:
     draw(window)
     for event in pygame.event.get():
