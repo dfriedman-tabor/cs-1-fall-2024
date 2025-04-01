@@ -33,6 +33,10 @@ def draw(canvas):
     # set the background white - feel free to change this color!
     canvas.fill((255,255,255))
 
+    # draws a scoreboard
+    textsurface = myfont.render('p1: '+str(score1), False, (0, 0, 0))
+    canvas.blit(textsurface, (WIDTH/3,10))
+
     # add more shapes here
 
 # ************** DON'T TOUCH THE BELOW CODE ***************************
