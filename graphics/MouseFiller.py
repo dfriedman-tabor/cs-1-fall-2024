@@ -41,7 +41,8 @@ pygame.init()
 window = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Graphics Starter')
 pygame.font.init()
-my_font = pygame.font.SysFont('Comic Sans MS', 30)
+myfont = pygame.font.SysFont('Comic Sans MS', 30)
+clock = pygame.time.Clock()
 
 setup()
 
@@ -57,6 +58,7 @@ while True:
             mx, my = pygame.mouse.get_pos()
             mousePressed(mx, my)
     pygame.display.update()
+    clock.tick(30)
 
 
 
